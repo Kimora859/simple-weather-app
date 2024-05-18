@@ -15,10 +15,10 @@ body {
     align-items: center;
 }
 
-.box {
+.container{
     max-width: 600px;
     padding: 20px;
-    background-color: #8f480e;
+    background-image: linear-gradient(to bottom, skyblue, skyblue 50%, white 70%);
     border-radius: 10px;
     /* box-shadow: 0 9px 10px rgba(190, 70, 70, 0.2); */
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
@@ -28,7 +28,7 @@ body {
 h1 {
     margin-bottom: 20px;
     font-size: 28px;
-    color: #fafafa; 
+    color: #000000; 
 }
 
 input[type="text"] {

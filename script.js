@@ -17,6 +17,7 @@ const locationInput = document.getElementById("locationInput");
 const searchButton = document.getElementById("searchButton");
 const locationElement = document.getElementById("location");
 const temperature = document.getElementById("temperature");
+const humidity = document.getElementById("humidity");
 const description = document.getElementById("description");
 
 // Accessing User Input
@@ -38,6 +39,7 @@ function fetchWeather(location) {
       locationElement.textContent = data.name;
       temperature.textContent = `${Math.round(data.main.temp)}°C`;
       description.textContent = data.weather[0].description;
+      humidity.textContent = `${data.main.humidity}%`;
     })
     .catch((error) => {
       console.error("Error fetching weather data:", error);
